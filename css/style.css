@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/*  ------------------- Fonts style ------------------- */
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
@@ -69,7 +71,7 @@ p {
     margin-top: -25px;
 }
 
-.description, .card-description, .footer-big p {
+.description {
     color: rgb(87, 84, 84);
     font-weight: 300;
 }
@@ -77,6 +79,8 @@ p {
 .category {
     font-weight: 700;
 }
+
+/*  --------------------------------------------------------- */
 
 body {
     color: #2c2c2c;
@@ -86,18 +90,15 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/*  ------------------- Header Page style ------------------- */
+
 img {
     max-width: 100%;
     border-radius: 1px;
 }
 
-
 .profile-page .page-header {
     min-height: 550px;
-}
-
-.profile-page .profile-container {
-    color: #FFFFFF;
 }
 
 .profile-page .photo-container {
@@ -114,18 +115,13 @@ img {
     margin-top: 30px;
 }
 
-.profile-page .description,
-.profile-page .category {
+.profile-page .description, .profile-page .category {
     text-align: center;
 }
 
 .profile-page h5.description {
     max-width: 700px;
     margin: 20px auto 75px;
-}
-
-.profile-page .nav-align-center {
-    margin-top: 30px;
 }
 
 .profile-page .content {
@@ -138,29 +134,15 @@ img {
     max-width: 150px;
     width: 145px;
     text-align: center;
-    margin: 15px 0 0px;
+    margin: 55px 0 0px;
 }
-
-.profile-page .content .social-description h2 {
-    margin-bottom: 15px;
-}
-
-
-.section {
-    padding: 70px 0;
-    position: relative;
-    background: #FFFFFF;
-}
-
 
 .page-header {
-    height: 150vh;
-    max-height: 1050px;
-    padding: 0;
-    color: #FFFFFF;
+    height: 60vh;
+    max-height: 440px;
     position: relative;
-    background-position: center center;
     background-size: cover;
+    background:rgba(40, 57, 101, .6);
 }
 
 .page-header .page-header-image {
@@ -186,69 +168,58 @@ img {
     max-width: 880px;
 }
 
-.page-header.page-header-small {
-    height: 60vh;
-    max-height: 440px;
+.page-header a {
+    color: #ffffff;
+    width: 51px;
+    height: 51px;
 }
 
-.page-header:after, .page-header:before {
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    left: 0;
-    top: 0;
-    content: "";
+/*  ------------------- Personal Information style ------------------- */
+
+.section {
+    padding: 50px 0;
+    position: relative;
+    background: #FFFFFF;
 }
 
-.page-header:before {
-    background:rgba(40, 57, 101, .6);
-}
-
-.information-all{
+.personal-information{
     margin: 0 auto;
     width: 1000px;
 }
 
-.col-3, .col-6, .col-9 {
+.col-6, .col-9 {
     display: inline-block;
     vertical-align: top;
     margin: 0;
     padding: 0;
 }
-.col-3 {
-    width: 32%;
-}
-.col-3-abs {
-    width: 290px;
-    display: inline-block;
-}
+
 .col-6-asb {
     width: 49.5%;
     display: inline-block;
     vertical-align: top;
 }
+
 .col-6 {
     width: 43.5%;
 }
+
 .col-9 {
     width: 70%;
 }
 
-
-.peasonal, item {
-    display: inline-block;
-}
-.ensprience .item, .skill .item {
+.courses .item, .skill .item {
     padding-left: 20px;
 }
+
 .item ul {
     padding-left: 15px;
 }
+
 .lang {
     margin-top: -5px;
 }
+
 .item .title {
     margin: 15px 0; 
     font-weight: bold;
@@ -256,11 +227,13 @@ img {
     color: #022643;
     letter-spacing: 1.14px;
 }
+
 .item p, .item li, .item lable {
     font-size: 14px;
     color: #022643;
     line-height: 24px;
 }
+
 .item lable {
     font-family: Courier;
     background: #E4EEF6;
@@ -272,16 +245,23 @@ img {
     vertical-align: top;
 }
 
-.ensprience .item, .skill .item {
+.courses .item, .skill .item {
     padding-left: 20px;
 }
 
-.ensprience {
+.courses {
     border-left: 1px solid #9DAFBE;
 }
 
-.w-experience-detail .pmessage:hover .hide {
-    top: 30px;
+.phone, .email{
+    margin-top: 10px; 
+}
+
+/*  ------------------- Experience style ------------------- */
+
+.work-experience {
+    width: 85%;
+    margin: 0 auto;
 }
 
 .w-experience-content {
@@ -318,15 +298,60 @@ img {
     letter-spacing: 1.14px;
     margin-bottom: 10px; 
 }
-.work-content p.key-word {
-    margin-top: 10px; 
-}
 
-.work-experience {
-    width: 1000px;
+/*  ------------------- Award style ------------------- */
+
+.award {
+    width: 60%;
     margin: 0 auto;
+    text-align: center
 }
 
-.phone, .email{
-    margin-top: 10px; 
+.award p.award-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #022643;
+    letter-spacing: 1.14px;
+    margin-bottom: 10px; 
+}
+
+
+/*  ----------------#3b323c--- Footer style ------------------- */
+
+.footer {
+    margin-top: 70px;
+    background: rgb(79, 100, 155);
+}
+
+.footer .container {
+    padding: 25px 0 25px;
+    text-align: center;
+}
+
+.footer li {
+    display: inline-block;
+    background: #ffffff;
+    color: rgb(79, 100, 155);
+    width: 51px;
+    height: 51px ;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.footer li:hover {
+    background: rgb(79, 100, 155);
+}
+
+.footer li:hover a {
+    color: #fff;
+}
+
+.footer li a {
+    color: rgb(79, 100, 155);
+    width: 51px;
+    height: 51px;
+}
+
+.footer li a i {
+    line-height: 52px;
 }
